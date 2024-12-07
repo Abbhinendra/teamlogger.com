@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+     overflow: hidden;
+     background-color: aqua;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container .teamlogger{
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+}
+.container .teamlogger span{
+    font-size: 26px;
+    margin: 12px 0;
+}
+.container .teamlogger span button{
+    border: none;
+    outline: 2px solid aquamarine;
+    background-color: aqua;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 9px;
+}
+.container .teamlogger .times{
+    display: flex;
+}
+
+.container .teamlogger .timesbuttonns{
+    display: flex;
+}
+
+
+#stoptimmer{
+    display: none;
+}
+
+.stoptimes{
+    display: none;
+}
+.stoptimes button{
+    border: none;
+    outline: 2px solid aquamarine;
+    background-color: aqua;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 9px;
+}
+
+@media print{
+    .timesbuttonns{
+        display: none;
+    }
+    #print{
+        display: none;
+    }
+    #teamlogger{
+        display: none;
+    }
+    #starttimmer{
+        display: none;
+    }
+    #daydate{
+        display: none;
+    }
+    #maincheck{
+        display: none;
+    }
+}
